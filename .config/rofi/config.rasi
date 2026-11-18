@@ -8,7 +8,7 @@ configuration {
     matching: "regex";
     drun-match-fields: "name";
     display-run: "menu:";
-    display-drun: "Launch:";
+    display-drun: "Applications:";
 
     hover-select: true;
     me-select-entry: "";
