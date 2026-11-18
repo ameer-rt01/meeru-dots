@@ -1,6 +1,6 @@
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
-    Mod+Space hotkey-overlay-title="Toggle Application Launcher" { spawn "rofi" "-show"; }
+    Mod+Space hotkey-overlay-title="Toggle Application Launcher" { spawn-sh "pkill -x rofi || rofi -show"; }
     Mod+D { toggle-overview; }
     Mod+Tab repeat=false { toggle-overview; }
     Mod+0 hotkey-overlay-title=null { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
