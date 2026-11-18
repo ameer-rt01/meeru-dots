@@ -57,6 +57,10 @@ prompt {
     background-color: transparent;
 }
 
+textbox-prompt-colon {
+    enabled: false;
+}
+
 entry {
     text-color: @fg;
     placeholder: "type to filter";
