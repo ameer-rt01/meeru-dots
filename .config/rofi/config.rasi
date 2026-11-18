@@ -59,14 +59,27 @@ entry {
 
 listview {
     background-color: @bg;
-    margin: 8px 0 0;
+    margin:           8px 0 0;
+    padding:          8px 0 0;
 
-    columns: 1;
-    lines: 6;
-    fixed-height: false;
+    border:           1px 0px 0px 0px;
+    border-color:     @bg-alt;
+
+    columns:          1;
+    lines:            6;
+    fixed-height:     false;
+    scrollbar:        true;
 }
 
-/* ===== Elements ===== */
+scrollbar {
+    background-color: @bg-alt;
+    handle-color:     @accent;
+    handle-width:     4px;
+    border:           0px;
+    border-radius:    4px;
+    margin:           0px 0px 0px 6px;
+}
+
 element {
     padding: 8px 10px;
     spacing: 6px;
