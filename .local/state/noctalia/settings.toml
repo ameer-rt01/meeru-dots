@@ -565,7 +565,7 @@ enabled = [
 
 [shell]
 app_icon_color = "primary"
-avatar_path = "~/Pictures/Profile/416fa31b4686d0a84649638e473c3c75.jpg"
+avatar_path = "~/Pictures/Profile/"
 button_borders = false
 card_borders = false
 circular_avatar = true
@@ -785,7 +785,7 @@ umbriel_overview_type_to_launch_enabled = false
         variant = "destructive"
 
     [shell.shadow]
-    alpha = 0.34999999403953552
+    alpha = 0.14999999105930328
     direction = "down"
 
     [shell.window_switcher]
