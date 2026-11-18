@@ -1,0 +1,130 @@
+configuration {
+    modes: "drun";
+    sorting-method: "normal";
+    show-icons: true;
+    matching: "regex";
+    drun-match-fields: "name";
+    display-run: "menu:";
+    display-drun: "Launch:";
+}
+
+@import "~/.config/rofi/noctalia.rasi"
+
+* {
+    font: "JetBrains Mono 10";
+    background-color: transparent;
+    text-color: @fg;
+
+    margin: 0px;
+    padding: 0px;
+    spacing: 0px;
+}
+
+window {
+    location: center;
+    width: 500;
+    y-offset: -20;
+
+    border-radius: 5px;
+    border: 0px;
+
+    background-color: @bg;
+}
+
+mainbox {
+    padding: 8px;
+    background-color: @bg;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius: 6px;
+    border: 0px;
+
+    padding: 8px 12px;
+    spacing: 8px;
+}
+
+prompt {
+    text-color: @accent;
+    background-color: transparent;
+}
+
+entry {
+    text-color: @fg;
+    placeholder: "search";
+    placeholder-color: @fg;
+    background-color: transparent;
+}
+
+listview {
+    background-color: @bg;
+    margin: 8px 0 0;
+
+    columns: 1;
+    lines: 6;
+    fixed-height: false;
+}
+
+/* ===== Elements ===== */
+element {
+    padding: 8px 10px;
+    spacing: 6px;
+    border-radius: 6px;
+}
+
+element normal.normal {
+    background-color: @bg;
+    text-color: @fg;
+}
+
+element alternate.normal {
+    background-color: @bg;
+    text-color: @fg;
+}
+
+element normal.urgent {
+    background-color: @bg-alt;
+    text-color: @accent;
+}
+
+element normal.active {
+    background-color: @bg;
+    text-color: @accent;
+}
+
+element selected.normal,
+element selected.active {
+    background-color: @accent;
+    text-color: @accent-fg;
+}
+
+element selected.urgent {
+    background-color: @accent;
+    text-color: @accent-fg;
+}
+
+element-icon {
+    size: 1em;
+    vertical-align: 0.5;
+    background-color: transparent;
+}
+
+element-text {
+    text-color: inherit;
+    background-color: transparent;
+}
+
+message {
+    margin: 8px 0 0;
+    border-radius: 8px;
+    border: 0px;
+
+    background-color: @bg-alt;
+}
+
+textbox {
+    padding: 8px 16px;
+    background-color: @bg-alt;
+    text-color: @fg;
+}
