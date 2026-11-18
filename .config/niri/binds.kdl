@@ -1,6 +1,6 @@
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
-    Mod+Space hotkey-overlay-title="Toggle Application Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+Space hotkey-overlay-title="Toggle Application Launcher" { spawn "rofi" "-show"; }
     Mod+D { toggle-overview; }
     Mod+Tab repeat=false { toggle-overview; }
     Mod+0 hotkey-overlay-title=null { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
@@ -115,7 +115,7 @@ binds {
     Print hotkey-overlay-title="Screenshot" { spawn "noctalia" "msg" "screenshot-region"; }
     Ctrl+Print hotkey-overlay-title=null { spawn "noctalia" "msg" "plugin" "alexander/screen-toolkit:service" "all" "annotateWindow"; }
     Alt+Print hotkey-overlay-title=null { spawn "noctalia" "msg" "screenshot-fullscreen"; }
-    Mod+Shift+S { screenshot; }
+    Mod+Shift+S { spawn "noctalia" "msg" "screenshot-region"; }
     Super+Alt+L repeat=false hotkey-overlay-title="Lock the Screen" { spawn "noctalia" "msg" "session" "lock"; }
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
     Mod+Shift+E { quit; }
