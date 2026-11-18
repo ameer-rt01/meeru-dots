@@ -129,6 +129,12 @@ output "eDP-1" {
     transform "normal"
     position x=0 y=0
 }
+/-output "eDP-1" {
+    mode "1920x1080@120.030"
+    scale 2
+    transform "normal"
+    position x=1280 y=0
+}
 layout {
     background-color "transparent"
     gaps 4
@@ -169,6 +175,11 @@ window-rule {
     default-column-width { fixed 640; }
     default-window-height { fixed 360; }
 }
+/-window-rule {
+    match app-id=r"^org\.keepassxc\.KeePassXC$"
+    match app-id=r"^org\.gnome\.World\.Secrets$"
+    block-out-from "screen-capture"
+}
 window-rule {
     geometry-corner-radius 5
     clip-to-geometry true
@@ -208,7 +219,6 @@ window-rule {
     match app-id="avahi-discover"
     match app-id="lstopo"
     match app-id="qv4l2"
-    match title="btop"
     open-floating true
 }
 window-rule {
@@ -235,6 +245,12 @@ window-rule {
     open-floating true
     default-column-width { fixed 600; }
     default-window-height { fixed 400; }
+}
+window-rule {
+    match title="btop"
+    open-floating true
+    default-column-width { fixed 800; }
+    default-window-height { fixed 495; }
 }
 window-rule {
     match is-active=false
