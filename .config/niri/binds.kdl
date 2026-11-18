@@ -139,6 +139,5 @@ binds {
     Mod+S hotkey-overlay-title="Launch Application: Spotify (adblock)" repeat=false { spawn "env" "LD_PRELOAD=/usr/lib/spotify-adblock.so" "spotify"; }
     Mod+Shift+N hotkey-overlay-title="Launch Application: Notesnook" { spawn "notesnook"; }
     Mod+Shift+Comma repeat=false hotkey-overlay-title="Launch Application: VS Codium" { spawn "env" "ELECTRON_OZONE_PLATFORM_HINT=wayland" "vscodium"; }
-    Mod+A hotkey-overlay-title="Launch Update: Shelly" repeat=false { spawn "alacritty" "-e" "shelly"; }
     Mod+M hotkey-overlay-title="Launch Application: Btop++" repeat=false { spawn "alacritty" "--title" "btop" "-e" "btop"; }
 }
