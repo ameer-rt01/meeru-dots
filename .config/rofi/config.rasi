@@ -64,6 +64,13 @@ entry {
     background-color: transparent;
 }
 
+num-filtered-rows,
+num-rows,
+textbox-num-sep {
+    text-color: @fg;
+    background-color: transparent;
+}
+
 listview {
     background-color: @bg;
     margin:           8px 0 0;
