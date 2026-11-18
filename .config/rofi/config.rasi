@@ -8,7 +8,7 @@ configuration {
     matching: "regex";
     drun-match-fields: "name";
     display-run: "menu:";
-    display-drun: "Launch:";
+    display-drun: "Launch";
 
     hover-select: true;
     me-select-entry: "";
@@ -59,8 +59,8 @@ prompt {
 
 entry {
     text-color: @fg;
-    placeholder: "search";
-    placeholder-color: @fg;
+    placeholder: "type to filter";
+    placeholder-color: @border;
     background-color: transparent;
 }
 
