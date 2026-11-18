@@ -64,13 +64,6 @@ entry {
     background-color: transparent;
 }
 
-num-filtered-rows,
-num-rows,
-textbox-num-sep {
-    text-color: @fg;
-    background-color: transparent;
-}
-
 listview {
     background-color: @bg;
     margin:           8px 0 0;
@@ -87,7 +80,7 @@ listview {
 
 scrollbar {
     background-color: @bg-alt;
-    handle-color:     @accent;
+    handle-color:     @border;
     handle-width:     4px;
     border:           0px;
     border-radius:    4px;
