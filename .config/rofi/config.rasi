@@ -9,6 +9,10 @@ configuration {
     drun-match-fields: "name";
     display-run: "menu:";
     display-drun: "Launch:";
+
+    hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
 }
 
 @import "~/.config/rofi/noctalia.rasi"
