@@ -1,6 +1,9 @@
 configuration {
     modes: "drun";
     sorting-method: "normal";
+    sort: false;
+    levenshtein-sort: false;
+    disable-history: true;
     show-icons: true;
     matching: "regex";
     drun-match-fields: "name";
