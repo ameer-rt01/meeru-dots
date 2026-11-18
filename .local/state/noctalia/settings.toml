@@ -37,7 +37,7 @@ order = [ "default" ]
     capsule_padding = 6.0
     capsule_radius = 8.0
     capsule_thickness = 0.75999999046325684
-    center = [ "clock", "date", "weather", "current" ]
+    center = [ "clock", "date", "current" ]
     compositor_blur = true
     concave_edge_corners = true
     contact_shadow = false
@@ -54,7 +54,7 @@ order = [ "default" ]
         "volume",
         "brightness",
         "battery",
-        "session"
+        "weather"
     ]
     font_scale = 1.0
     font_weight = 600
@@ -841,7 +841,7 @@ swap_pct_critical_threshold = 80.0
 
 [theme]
 builtin = "Tokyo-Night"
-community_palette = "Catppuccin Mocha Lavender"
+community_palette = "Catppuccin Mocha Blue"
 custom_palette = "snow-night-moon-sft"
 mode = "dark"
 pure_black_dark = false
@@ -849,7 +849,7 @@ shell_mode = "follow"
 source = "wallpaper"
 sync_color_scheme = true
 terminal_colors = "palette"
-wallpaper_scheme = "m3-content"
+wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "niri", "qt" ]
@@ -896,12 +896,20 @@ type = "active_window"
 type = "audio_visualizer"
 width = 30
 
+[widget.bluetooth]
+show_label = true
+type = "bluetooth"
+
 [widget.brightness]
-show_label = false
+enabled = false
 type = "brightness"
 
 [widget.cat]
 type = "dotnetrob/cat:cat"
+
+[widget.clipboard]
+enabled = false
+type = "clipboard"
 
 [widget.control-center]
 enabled = false
@@ -963,6 +971,10 @@ type = "sysmon"
 stat = "net_tx"
 type = "sysmon"
 
+[widget.notifications]
+enabled = false
+type = "notifications"
+
 [widget.output_volume]
 device = "output"
 type = "volume"
@@ -970,6 +982,10 @@ type = "volume"
 [widget.ram]
 stat = "ram_used"
 type = "sysmon"
+
+[widget.session]
+enabled = false
+type = "session"
 
 [widget.soundcore]
 type = "sankity/soundcore-buds:soundcore"
