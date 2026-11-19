@@ -13,7 +13,7 @@ size = 10
 [window]
 decorations = "None"
 padding = { x = 6, y = 6 }
-opacity = 0.8
+# opacity = 0.8
 
 [scrolling]
 history = 3023
