@@ -69,6 +69,8 @@ entry {
 }
 
 listview {
+    dynamic: true;
+
     background-color: @bg;
     margin:           8px 0 0;
     padding:          8px 0 0;
