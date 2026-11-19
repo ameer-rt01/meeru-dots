@@ -208,7 +208,6 @@ window-rule {
     match app-id="avahi-discover"
     match app-id="lstopo"
     match app-id="qv4l2"
-    match app-id="^rofi$"
     open-floating true
 }
 window-rule {
