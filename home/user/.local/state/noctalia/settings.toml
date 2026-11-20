@@ -297,12 +297,12 @@ lock_before_suspend = true
 monitors = []
 tint_color = "surface"
 tint_intensity = 0.30000001192092896
-transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb", "vortex", "pixel", "diamond", "golden", "melt", "crt" ]
-transition_duration = 1500.0
+transition = []
+transition_duration = 1000.0
 wallpaper = ""
 
 [lockscreen_widgets]
-enabled = false
+enabled = true
 schema_version = 2
 widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@winit", "lockscreen-login-box@eDP-1" ]
 
@@ -844,7 +844,18 @@ wallpaper_scheme = "m3-monochrome"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "niri", "qt" ]
-    community_ids = [ "brave-origin", "discord", "telegram", "vscode", "prismlauncher", "rofi", "obs", "cosmic", "fzf" ]
+    community_ids = [
+        "brave-origin",
+        "discord",
+        "telegram",
+        "vscode",
+        "prismlauncher",
+        "rofi",
+        "obs",
+        "cosmic",
+        "papirus-icons",
+        "fzf"
+    ]
     enable_builtin_templates = true
     enable_community_templates = true
 
@@ -858,9 +869,9 @@ fill_color = ""
 fill_mode = "crop"
 per_monitor_directories = false
 sync_transitions = true
-transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb", "vortex", "pixel", "diamond", "golden", "melt", "crt" ]
+transition = []
 transition_duration = 1000.0
-transition_on_startup = true
+transition_on_startup = false
 
     [wallpaper.automation]
     enabled = false
