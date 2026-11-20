@@ -17,6 +17,7 @@ input {
     focus-follows-mouse max-scroll-amount="0%"
 }
 animations {
+    off
     slowdown 0.7999999999999997
     window-open {
         duration-ms 260
@@ -169,7 +170,7 @@ hotkey-overlay {
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
-window-rule {
+/-window-rule {
     match app-id="brave-origin" title="Picture in picture"
     open-floating true
     default-column-width { fixed 640; }
