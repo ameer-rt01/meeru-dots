@@ -408,7 +408,7 @@ temperature_day = 6600
 temperature_night = 4900
 
 [notification]
-background_opacity = 0.59999996423721313
+background_opacity = 0.97
 border = false
 border_color = "outline_variant"
 border_width = 1.0
@@ -445,7 +445,7 @@ width = 360
     show_toast = false
 
 [osd]
-background_opacity = 0.59999996423721313
+background_opacity = 0.97
 border = false
 border_color = "outline_variant"
 border_width = 1.0
@@ -574,8 +574,8 @@ font_family = "JetBrainsMono Nerd Font"
 input_borders = false
 launch_apps_as_systemd_services = false
 launch_apps_custom_command = ""
-niri_overview_close_on_launch_enabled = true
-niri_overview_type_to_launch_enabled = true
+niri_overview_close_on_launch_enabled = false
+niri_overview_type_to_launch_enabled = false
 offline_mode = false
 panel_anchor_bar = "default"
 password_style = "default"
