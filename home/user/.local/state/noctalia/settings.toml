@@ -15,9 +15,9 @@ sound_volume = 0.5
 spectrum_frame_rate = 60
 
 [backdrop]
-blur_intensity = 0.0
+blur_intensity = 0.5
 enabled = false
-tint_intensity = 0.0
+tint_intensity = 0.30000001192092896
 
 [bar]
 order = [ "default" ]
@@ -42,20 +42,7 @@ order = [ "default" ]
     concave_edge_corners = true
     contact_shadow = false
     enabled = true
-    end = [
-        "media",
-        "widget",
-        "tray",
-        "soundcore",
-        "notifications",
-        "clipboard",
-        "network",
-        "bluetooth",
-        "volume",
-        "brightness",
-        "battery",
-        "weather"
-    ]
+    end = [ "media", "widget", "tray", "soundcore", "network", "bluetooth", "volume", "battery", "weather" ]
     font_scale = 1.0
     font_weight = 600
     hover_highlight = true
@@ -348,6 +335,7 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@winit", 
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
@@ -377,6 +365,7 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@winit", 
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
@@ -385,12 +374,12 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@winit", 
     [lockscreen_widgets.widget."lockscreen-login-box@winit"]
     box_height = 196.0
     box_width = 810.0
-    cx = 477.0
+    cx = 956.0
     cy = 856.0
     enabled = true
     output = "winit"
     placement_height = 1038.0
-    placement_width = 954.0
+    placement_width = 1912.0
     rotation = 0.0
     type = "login_box"
 
@@ -406,6 +395,7 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@winit", 
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
@@ -547,10 +537,11 @@ enabled = [
     "dotnetrob/cat",
     "yuuto/arch-updater",
     "elijaharch/wl-screen-mirror",
-    "ashur-d/wallpaper-widget",
     "whyoolw/dropwall",
     "sankity/soundcore-buds",
-    "alexander/screen-toolkit"
+    "alexander/screen-toolkit",
+    "kavya-nama/wallpaper-switcher",
+    "ashur-d/wallpaper-widget"
 ]
 
     [[plugins.source]]
@@ -609,7 +600,7 @@ umbriel_overview_close_on_launch_enabled = false
 umbriel_overview_type_to_launch_enabled = false
 
     [shell.animation]
-    enabled = true
+    enabled = false
     speed = 2.0
 
     [shell.greeter_sync]
@@ -672,7 +663,7 @@ umbriel_overview_type_to_launch_enabled = false
     session_placement = "attached"
     session_position = "auto"
     shadow = true
-    transparency_mode = "soft"
+    transparency_mode = "solid"
     wallpaper_placement = "attached"
     wallpaper_position = "auto"
     wallpaper_show_names = false
@@ -702,7 +693,7 @@ umbriel_overview_type_to_launch_enabled = false
     pipe_to_command = false
     quality = 90
     region_border_width = 2.0
-    region_dim_opacity = 0.64999997615814209
+    region_dim_opacity = 0.34999999403953552
     region_modifier = "none"
     remember_last_region = false
     save_to_file = true
@@ -764,7 +755,7 @@ umbriel_overview_type_to_launch_enabled = false
 
         [[shell.session.actions]]
         action = "logout"
-        command = ""
+        command = "loginctl terminate-user $USER"
         countdown_seconds = 0.0
         enabled = true
         glyph = ""
@@ -840,16 +831,16 @@ swap_pct_activity_threshold = 20.0
 swap_pct_critical_threshold = 80.0
 
 [theme]
-builtin = "Tokyo-Night"
-community_palette = "Catppuccin Mocha Blue"
-custom_palette = "snow-night-moon-sft"
+builtin = "Ayu"
+community_palette = "Occult Umbral"
+custom_palette = "SpotifyAmbientDynamic-72cGBEqu7RitIOoACXYjfR"
 mode = "dark"
 pure_black_dark = false
 shell_mode = "follow"
 source = "wallpaper"
 sync_color_scheme = true
 terminal_colors = "palette"
-wallpaper_scheme = "m3-tonal-spot"
+wallpaper_scheme = "m3-monochrome"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "niri", "qt" ]
@@ -935,8 +926,14 @@ hide_when_single_layout = false
 type = "keyboard_layout"
 
 [widget.launcher]
-enabled = false
+capsule = true
+color = "primary"
+custom_label = "/meeru"
+show_glyph = false
 type = "launcher"
+
+    [widget.launcher.actions]
+    left = "exec pkill -x rofi || rofi -show drun"
 
 [widget.lock_keys]
 display = "short"
@@ -993,6 +990,11 @@ type = "sankity/soundcore-buds:soundcore"
 [widget.spacer]
 interactive = false
 type = "spacer"
+
+[widget.taskbar]
+show_active_indicator = false
+show_window_title = true
+type = "taskbar"
 
 [widget.temp]
 stat = "cpu_temp"
