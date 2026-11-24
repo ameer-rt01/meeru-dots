@@ -109,6 +109,7 @@ window-rule {
 }
 window-rule {
     match app-id=r"^dev\.noctalia\.luciole$"
+    open-focused true    
     open-floating false
 }
 window-rule {
