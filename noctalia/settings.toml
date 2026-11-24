@@ -37,9 +37,9 @@ order = [ "default" ]
     capsule_opacity = 0.5
     capsule_padding = 6.0
     capsule_radius = 8.0
-    capsule_thickness = 0.75999999046325684
+    capsule_thickness = 0.7599999904632568
     center = [ "clock", "date", "current" ]
-    compositor_blur = true
+    compositor_blur = false
     concave_edge_corners = true
     contact_shadow = false
     enabled = true
@@ -154,7 +154,7 @@ active_opacity = 1.0
 active_scale = 1.0
 auto_hide = false
 auto_hide_reveal_delay_ms = 250
-background_opacity = 0.87999999523162842
+background_opacity = 0.8799999952316284
 border = "outline_variant"
 border_width = 0.0
 colorize_icons = false
@@ -165,8 +165,8 @@ enabled = false
 icon_saturation = 1.0
 icon_shadow = false
 icon_size = 48
-inactive_opacity = 0.85000002384185791
-inactive_scale = 0.85000002384185791
+inactive_opacity = 0.8500000238418579
+inactive_scale = 0.8500000238418579
 item_spacing = 6
 launcher_custom_image = ""
 launcher_custom_image_colorize = false
@@ -508,7 +508,7 @@ temperature_day = 6600
 temperature_night = 4900
 
 [notification]
-background_opacity = 0.97000002861022949
+background_opacity = 0.9700000286102295
 border = false
 border_color = "outline_variant"
 border_width = 1.0
@@ -545,7 +545,7 @@ width = 360
     show_toast = false
 
 [osd]
-background_opacity = 0.97000002861022949
+background_opacity = 0.9700000286102295
 border = false
 border_color = "outline_variant"
 border_width = 1.0
@@ -638,10 +638,10 @@ enabled = [
     "yuuto/arch-updater",
     "elijaharch/wl-screen-mirror",
     "whyoolw/dropwall",
-    "sankity/soundcore-buds",
     "alexander/screen-toolkit",
     "kavya-nama/wallpaper-switcher",
-    "ashur-d/wallpaper-widget"
+    "ashur-d/wallpaper-widget",
+    "sankity/soundcore-buds"
 ]
 
     [[plugins.source]]
@@ -793,7 +793,7 @@ umbriel_overview_type_to_launch_enabled = false
     pipe_to_command = false
     quality = 90
     region_border_width = 2.0
-    region_dim_opacity = 0.34999999403953552
+    region_dim_opacity = 0.3499999940395355
     region_modifier = "none"
     remember_last_region = false
     save_to_file = true
@@ -943,7 +943,7 @@ terminal_colors = "palette"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "alacritty", "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "niri", "qt" ]
+    builtin_ids = [ "alacritty", "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "luciole", "niri", "qt" ]
     community_ids = [
         "brave-origin",
         "discord",
@@ -997,10 +997,6 @@ type = "active_window"
 [widget.audio_visualizer]
 type = "audio_visualizer"
 width = 30
-
-[widget.bluetooth]
-show_label = true
-type = "bluetooth"
 
 [widget.brightness]
 enabled = false
