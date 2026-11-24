@@ -43,12 +43,6 @@ output "eDP-1" {
     transform "normal"
     position x=0 y=0
 }
-/-output "eDP-1" {
-    mode "1920x1080@120.030"
-    scale 2
-    transform "normal"
-    position x=1280 y=0
-}
 layout {
     background-color "transparent"
     gaps 4
@@ -62,11 +56,9 @@ layout {
     default-column-width { proportion 0.5; }
     focus-ring {
         off
-        width 0
     }
     border {
         off
-        width 2
     }
     shadow {
         softness 30
@@ -88,11 +80,6 @@ window-rule {
     open-floating true
     default-column-width { fixed 640; }
     default-window-height { fixed 360; }
-}
-/-window-rule {
-    match app-id=r"^org\.keepassxc\.KeePassXC$"
-    match app-id=r"^org\.gnome\.World\.Secrets$"
-    block-out-from "screen-capture"
 }
 window-rule {
     geometry-corner-radius 5
@@ -120,51 +107,9 @@ window-rule {
     match app-id="Alacritty"
     draw-border-with-background false
 }
-/-window-rule {
-    match app-id="org.gnome.Nautilus"
-    match app-id="org.gnome.NautilusPreviewer"
-    match app-id="org.gnome.Snapshot"
-    match app-id="auto-cpufreq"
-    match app-id="system-config-printer"
-    match app-id="nwg-look"
-    match app-id="bssh"
-    match app-id="nm-connection-editor"
-    match app-id="bvnc"
-    match app-id="avahi-discover"
-    match app-id="lstopo"
-    match app-id="qv4l2"
-    match app-id="^rofi$"
-    open-floating true
-}
-/-window-rule {
-    match app-id="io.github.nozwock.Packet"
-    match app-id="qt6ct"
-    match app-id="qalculate"
-    open-floating true
-    default-column-width { fixed 600; }
-    default-window-height { fixed 600; }
-}
-/-window-rule {
-    match app-id="org.gnome.seahorse.Application"
-    open-floating true
-    default-column-width { fixed 900; }
-    default-window-height { fixed 700; }
-}
-/-window-rule {
-    match app-id="pavucontrol"
-    match app-id="org.gnome.SimpleScan"
-    match app-id="com.oppzippy.OpenSCQ30"
-    match app-id="org.gnome.FileRoller"
-    match app-id="io.gitlab.adhami3310.Impression"
-    open-floating true
-    default-column-width { fixed 600; }
-    default-window-height { fixed 400; }
-}
-/-window-rule {
-    match title="btop"
-    open-floating true
-    default-column-width { fixed 800; }
-    default-window-height { fixed 495; }
+window-rule {
+    match app-id=r"^dev\.noctalia\.luciole$"
+    open-floating false
 }
 window-rule {
     match is-active=false
