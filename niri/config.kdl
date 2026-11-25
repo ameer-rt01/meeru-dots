@@ -108,7 +108,7 @@ window-rule {
     draw-border-with-background false
 }
 window-rule {
-    match app-id=r"^dev\.noctalia\.luciole$"
+    match app-id=r"^dev\.noctalia\.luciole"
     open-focused true    
     open-floating false
 }
