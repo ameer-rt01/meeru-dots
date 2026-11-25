@@ -135,6 +135,7 @@ binds {
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
     Mod+T hotkey-overlay-title="Launch Terminal: Alacritty" { spawn "alacritty"; }
     Mod+B hotkey-overlay-title="Launch Browser: Brave Origin" { spawn "brave-origin"; }
+    Mod+E hotkey-overlay-title="Launch Application: Equibop" { spawn "equibop"; }
     Mod+N hotkey-overlay-title="Launch Application: Luciole" { spawn "luciole"; }
     Mod+S hotkey-overlay-title="Launch Application: Spotify (adblock)" repeat=false { spawn "env" "LD_PRELOAD=/usr/lib/spotify-adblock.so" "spotify"; }
     Mod+Shift+N hotkey-overlay-title="Launch Application: Notesnook" { spawn "notesnook"; }
