@@ -56,9 +56,11 @@ layout {
     default-column-width { proportion 0.5; }
     focus-ring {
         off
+        width 0
     }
     border {
         off
+        width 2
     }
     shadow {
         softness 30
@@ -109,8 +111,8 @@ window-rule {
 }
 window-rule {
     match app-id=r"^dev\.noctalia\.luciole"
-    open-focused true    
     open-floating false
+    open-focused true
 }
 window-rule {
     match is-active=false
