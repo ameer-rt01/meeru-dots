@@ -637,6 +637,13 @@ controls_placement = "floating"
 [plugin_settings."fel/quill"]
 ai_backend = "off"
 
+[plugin_settings."h-jangra/keyviz"]
+badge_style = "keycap_dark"
+font_size = "small"
+margin = 8
+max_keys = 3
+padding = 0
+
 [plugin_settings."kenn/keybind-cheatsheet"]
 columns = 4
 compositor = "niri"
@@ -675,7 +682,6 @@ enabled = [
     "elijaharch/wl-screen-mirror",
     "whyoolw/dropwall",
     "alexander/screen-toolkit",
-    "kavya-nama/wallpaper-switcher",
     "ashur-d/wallpaper-widget",
     "sankity/soundcore-buds"
 ]
