@@ -618,14 +618,6 @@ close_on_apply = true
 notify_on_change = false
 wallpaper_dir = "~/Pictures/Wallpapers"
 
-[plugin_settings."avivbintangaringga/nextboot-selector"]
-panel_open_near_click = false
-
-[plugin_settings."blackbartblues/keymap"]
-columns = 4
-keyboard_layout = "60"
-merge_similar = true
-
 [plugin_settings."dotnetrob/cat"]
 panel_open_near_click = false
 panel_placement = "floating"
@@ -634,32 +626,8 @@ panel_placement = "floating"
 controls_open_near_click = false
 controls_placement = "floating"
 
-[plugin_settings."fel/quill"]
-ai_backend = "off"
-
-[plugin_settings."h-jangra/keyviz"]
-badge_style = "keycap_dark"
-font_size = "small"
-margin = 8
-max_keys = 3
-padding = 0
-
-[plugin_settings."kenn/keybind-cheatsheet"]
-columns = 4
-compositor = "niri"
-show_undescribed = false
-
-[plugin_settings."notoxus/media-island"]
-island_placement = "attached"
-
-[plugin_settings."raycursive/niri-displays"]
-panel_open_near_click = false
-
 [plugin_settings."sankity/soundcore-buds"]
 panel_position = "auto"
-
-[plugin_settings."thaer99ob/default-apps"]
-manager_placement = "attached"
 
 [plugin_settings."whyoolw/dropwall"]
 notify_on_set = false
